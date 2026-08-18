@@ -5,8 +5,6 @@ sequencia = 0
 num1 = 0
 num2 = 1
 
-print (num1)
-
 while contador < termo:
     contador += 1
     sequencia = num1 + num2
