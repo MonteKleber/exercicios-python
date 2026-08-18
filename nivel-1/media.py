@@ -12,9 +12,9 @@ if mediaFinal >= 7:
 
     print ("Aluno Aprovado!")
 
-if mediaFinal >=5 and mediaFinal < 6.9:
+if mediaFinal >=5 and mediaFinal < 7:
     
     print ("Aluno de recuperação")
 
-if mediaFinal < 4.9:
+if mediaFinal < 5:
     print ("Aluno reprovado")
