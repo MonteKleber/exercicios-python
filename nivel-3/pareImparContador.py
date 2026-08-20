@@ -5,7 +5,7 @@ impar = 0
 
 if quantNumero == 0:
     print ("PROGRAMA ENCERRADO!")
-elif quantNumero == 0:
+elif quantNumero < 0:
     print ("ERRO! O NÚMERO INFORMADO É NEGATIVO")
 else:
     while contador < quantNumero:
