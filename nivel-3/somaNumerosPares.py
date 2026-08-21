@@ -5,7 +5,7 @@ acum = 0
 if quantNumero == 0: #verifica o que o usuário digitou, caso seja 0 ele encerra o programa
     print ("Programa encerrado!")
 elif quantNumero < 0:
-    print ("ERRO! NÚMERO NEGATIVO INSERIDO") #caso seja número seja negativo, retorna uma mensagem de erro ao usuário
+    print ("ERRO! A quantidade de números não pode ser negativa") #caso seja número seja negativo, retorna uma mensagem de erro ao usuário
 else:
     while cont < quantNumero: #Cria um loop para que a instrução seja feita pela quantidade de vezes que o usuário requeriu
         cont += 1
