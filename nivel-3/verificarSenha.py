@@ -1,4 +1,4 @@
-senha = 'euamoasofia' #define uma senha
+senha = 'python123' #define uma senha
 contador = 0
 
 while contador < 3:
