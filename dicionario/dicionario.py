@@ -1,12 +1,12 @@
 professor = {
     "id": 1,
-    "nome": "Linnek Rocha"
+    "nome": "Carlos Bonfim"
 }
 
 turma = {
     "id": 1,
     "curso":"enfermagem",
-    "codigo_turma": "ENF261N",
+    "codigo_turma": "ENF221N",
     "turno": "noturno"
 }
 
@@ -17,7 +17,7 @@ disciplina = {
 
 sala = {
     "id" : 1,
-    "identificacao" : "Sala 5"
+    "identificacao" : "Sala 207"
 }
 
 alocacao = {
