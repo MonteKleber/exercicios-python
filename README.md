@@ -46,10 +46,43 @@ Exercícios desenvolvidos:
 
 ### Nível 3 — Lógica e repetição
 
-Etapa dos estudos combinando estruturas condicionais, repetição, contadores e acumuladores em problemas mais complexos.
+Exercícios voltados para a combinação de estruturas condicionais, repetição, contadores, acumuladores e validações em problemas com maior quantidade de regras.
 
-**Status:** 🚧 Em desenvolvimento
+Exercícios desenvolvidos:
 
+- Soma dos números de 1 até N
+- Cálculo de média
+- Identificação do maior número
+- Identificação do menor número
+- Contagem de números pares e ímpares
+- Soma dos números pares
+- Verificador de senha
+- Jogo de adivinhação
+- Menu de calculadora
+- Analisador de números
+
+Durante esta etapa foram praticados e consolidados conceitos como:
+
+- Uso de estruturas de repetição com `while`
+- Combinação de `while` com `if`, `elif` e `else`
+- Utilização de contadores
+- Utilização de acumuladores
+- Atualização de valores durante um laço
+- Comparação entre valores para encontrar maior e menor número
+- Verificação de números pares e ímpares utilizando o operador módulo (`%`)
+- Validação de entradas e condições
+- Controle de repetição baseado em condições
+- Uso de `break` para interromper um laço
+- Construção de menus interativos
+- Processamento de várias entradas fornecidas pelo usuário
+- Aplicação de diferentes regras dentro de um mesmo programa
+- Tratamento de casos especiais, como divisão por zero
+- Desenvolvimento de algoritmos com múltiplas etapas
+- Maior organização do raciocínio antes da implementação do código
+
+Os exercícios desta etapa representaram uma evolução dos problemas isolados dos níveis anteriores para programas com mais estados, decisões e comportamentos diferentes.
+
+**Status:** ✅ Concluído
 ### Nível 4 — Dicionários e estruturas de dados
 
 Exercícios voltados para a representação e relacionamento de dados utilizando dicionários em Python.
