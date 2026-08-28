@@ -1,13 +1,45 @@
+def aceitar_solicitacao(solicitacao): #define uma função para aceitar a solicitação
+    if solicitacao ["status"] == "AGUARDANDO":
+        solicitacao ["status"] = "EM ATENDIMENTO"
+        solicitacao ["horario_de_atendimento"] = "18:38"
+    else:
+        print ("Não é possível aceitar essa solicitação")
+        print (f"Status da solicitação: {solicitacao['status']}")
+
+def concluir_soliciticao(solicitacao):#define uma função para concluir a solicitação
+    if solicitacao ["status"] == "EM ATENDIMENTO":
+        solicitacao ["status"] = "CONCLUÍDO"
+        solicitacao ["horario_de_conclusao"] = "18:40"
+    else:
+        print ("Não é possível concluir essa solicitação")
+        print (f"Status da solicitação:{solicitacao['status']}")
+
+def exibir_solicitacao (solicitacao): #define uma função apenas para exibir a solicitação
+    print ("=== SOLICITAÇÃO ===")
+    print (solicitacao["id"])
+    print (solicitacao ["alocacao"]["id"])
+    print (solicitacao ["alocacao"]["professor"]["nome"])
+    print (solicitacao ["alocacao"]["turma"]["codigo_turma"])
+    print (solicitacao ["alocacao"]["disciplina"]["nome"])
+    print (solicitacao ["alocacao"]["sala"]["identificacao"])
+    print (solicitacao ["alocacao"]["data_inicio"])
+    print (solicitacao ["alocacao"]["data_fim"])
+    print (solicitacao ["problema"])
+    print (solicitacao ["horario_de_abertura"])
+    print (solicitacao ["horario_de_atendimento"])
+    print (solicitacao ["horario_de_conclusao"])
+    print (solicitacao ["status"])
+
 professor = {
     "id": 1,
-    "nome": "Linnek Rocha"
+    "nome": "Carlos Bonfim"
 }
 
 turma = {
     "id": 1,
     "curso":"enfermagem",
-    "codigo_turma": "ENF261N",
-    "turno": "noturno"
+    "codigo_turma": "ENF221N",
+    "turno": "noturno"  
 }
 
 disciplina = {
@@ -17,7 +49,7 @@ disciplina = {
 
 sala = {
     "id" : 1,
-    "identificacao" : "Sala 5"
+    "identificacao" : "Sala 207"
 }
 
 alocacao = {
@@ -69,25 +101,7 @@ print (solicitacao ["horario_de_atendimento"])
 print (solicitacao ["horario_de_conclusao"])
 print (solicitacao ["status"])
 
-#solicitacao ["status"] = "CONCLUÍDO"
-
-if solicitacao ["status"] == "AGUARDANDO":
-    solicitacao ["status"] = "EM ATENDIMENTO"
-    solicitacao ["horario_de_atendimento"] = "18:38"
-    print ("=== APÓS ACEITAR ===")
-    print (solicitacao["id"])
-    print (solicitacao ["alocacao"]["id"])
-    print (solicitacao ["alocacao"]["professor"]["nome"])
-    print (solicitacao ["alocacao"]["turma"]["codigo_turma"])
-    print (solicitacao ["alocacao"]["disciplina"]["nome"])
-    print (solicitacao ["alocacao"]["sala"]["identificacao"])
-    print (solicitacao ["alocacao"]["data_inicio"])
-    print (solicitacao ["alocacao"]["data_fim"])
-    print (solicitacao ["problema"])
-    print (solicitacao ["horario_de_abertura"])
-    print (solicitacao ["horario_de_atendimento"])
-    print (solicitacao ["horario_de_conclusao"])
-    print (solicitacao ["status"])
-else:
-    print ("Não é possível aceitar essa solicitação")
-    print (f"Status da solicitação: {solicitacao['status']}")
+aceitar_solicitacao(solicitacao)
+exibir_solicitacao(solicitacao)
+concluir_soliciticao(solicitacao)
+exibir_solicitacao(solicitacao)
